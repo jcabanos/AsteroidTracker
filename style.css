@@ -1,0 +1,160 @@
+body
+{
+   margin:0;
+   padding:0;
+   font-size:14px;
+   background-image: url("Web-BG.jpg");
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: fixed;
+   font-family: 'Red Hat Text', sans-serif;
+   height: 100%;
+   overflow: hidden;
+   color: #dcdfdf;
+}
+.calender
+{
+  position: absolute;
+  bottom: 43%;
+  left: 7.5%;
+  width: 92.5%;
+}
+
+.datePicker
+{
+  background-color: #051215;
+  color: #839296;
+  opacity: 83%;
+  border-width: 0;
+  height: 2rem;
+  width: 10%;
+  font-size: 1rem;
+}
+.datePicker:hover
+{
+  opacity: 50%;
+}
+
+.submit
+{
+  margin-left: 1%;
+  border-radius: 25px;
+  background: #da3846;
+  width: 125px;
+  height: 30px;
+  color: #051215;
+  font-weight: bold;
+  font-size: .75rem;
+}
+
+.submit:hover
+{
+  opacity: 80%;
+}
+
+.visual img
+{
+  margin: 2.5% 0 0 5%;
+  max-height: 50px;
+}
+
+.infoBar
+{
+  position: absolute;
+  right:0;
+  top: 0;
+  width: 25%;
+  height: 100%;
+  background-color: #051215;
+  opacity: 83%;
+  color: #dcdfdf;
+  text-align: left;
+  z-index: -1;
+  font-weight: 500;
+
+}
+
+.infoBar img
+{
+  margin: 30% 25% 10% 25%;
+  width: 50%;
+}
+
+.infoBar H3
+{
+  margin: 0 13% 10% 13%;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.infoBar p
+{
+
+  font-size: 1.25rem;
+  margin-left: 25%;
+  margin-bottom: 0;
+}
+
+.next
+{
+  width: 20%;
+  margin: 5% 40% 0 40% ;
+}
+
+.earth
+{
+  z-index: 1;
+  top: 40%;
+  left: 40%;
+  height: 30%;
+  width: 20%;
+  position: absolute !important;
+}
+
+.asteroid
+{
+  position: absolute;
+  top: 54%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer
+{
+position: absolute;
+top: 85%;
+font-size: .75rem;
+}
+.footerDiv
+{
+  display: inline-block;
+  margin-left: 7.5%;
+  width: 25%;
+}
+
+.rotate {
+animation: rotation 80000s infinite linear;
+}
+
+.rotate img {
+max-height: 20px;
+}
+
+@keyframes rotation {
+from {
+  transform: rotate();
+}
+to {
+  transform: rotate(360000deg);
+}
+}
+@keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}

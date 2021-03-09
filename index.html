@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://www.webglearth.com/v2/api.js"></script>
+    <title></title>
+  </head>
+  <body onload="initialize()">
+    <div class="visual">
+      <img src="header.png" />
+    </div>
+    <div class="earth" id="earth_div"></div>
+    <div class="asteroid" id="asteroidDiv">
+    </div>
+    <div class="calender">
+      <input type="date" id="date" name="trip-start" class="datePicker"
+         value=""
+         min="1900-01-01" max="2200-12-31" oninput="searchApi()">
+         <button type="button" class="btn btn-danger submit" onclick="start()">SUBMIT</button>
+     </div>
+     <div class="infoBar">
+       <img class="rotate" src="asteroid.png" />
+       <h3 class="asteroidName">Asteroid Name</h3>
+       <p class="idNum">ID Number: </p>
+       <p class="diameter">Diameter: </p>
+       <p class="missDistance">Miss Distance: </p>
+       <p class="velocity">Relative Velocity: </p>
+       <button type="button" class="btn btn-danger submit next" onclick="changeInfo()">Next</button>
+     </div>
+     <div class="footer">
+
+
+     <div class="footerDiv">
+       <h5>Directions</h5>
+       <p>
+         Discover all the near asteroids and their information on any given date. Just select a date and submit.
+       </p>
+     </div>
+     <div class="footerDiv">
+       <h5>Sources</h5>
+       <p>
+         NASA's Goddard Space Flight Center Conceptual Image Lab | Asteroid Vector Icon: www.flaticon.com
+       </p>
+     </div>
+          </div>
+
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
