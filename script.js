@@ -23,7 +23,7 @@
   function start()
   {
     document.getElementById("asteroidDiv").innerHTML="";
-    setTimeout(searchArray, 1500);
+    setTimeout(searchArray, 2500);
   }
 
   function searchArray()
